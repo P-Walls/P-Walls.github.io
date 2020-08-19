@@ -1,0 +1,6 @@
+.social-list {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  float: right;
+}

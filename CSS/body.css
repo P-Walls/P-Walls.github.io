@@ -1,4 +1,20 @@
 body {
-    background: white;
-    font-family: var(--font-one);
+  background: white;
+  font-family: var(--font-one);
+}
+
+.resume {
+  text-align: center;
+}
+
+#resume {
+  color: black;
+}
+
+#resume:hover {
+  opacity: 50%;
+}
+
+a:hover {
+  text-decoration: none;
 }

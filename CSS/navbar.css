@@ -1,3 +1,11 @@
 .navbar-nav {
-    margin-left: 75%;
+  margin-left: 75%;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  color: whitesmoke;
 }

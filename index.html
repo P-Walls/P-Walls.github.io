@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patrick A. Walls Portfolio</title>
     <!-- Boostrap CSS link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <!-- Google Fonts Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Andada&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andada&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bevan&display=swap"
+      rel="stylesheet"
+    />
     <!-- My CSS link -->
-    <link rel="stylesheet" type="text/css" href="./CSS/main.css">
-</head>
-<body>
-
+    <link rel="stylesheet" type="text/css" href="./CSS/main.css" />
+  </head>
+  <body>
     <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#home">Patrick A. Walls</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #739e82;"
+    >
+      <a class="navbar-brand" href="#landing-section">Patrick A. Walls</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about"
+              >About <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
@@ -41,20 +73,36 @@
 
     <!-- Jumbotron -->
     <section id="landing-section">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Patrick Walls</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-            </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Patrick Walls</h1>
+          <p class="lead">Aspiring web developer with a focus on JavaScript</p>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
+    <!-- "jumbotron jumbotron-fluid" -->
     <section id="about">
-      <div class="jumbotron jumbotron-fluid">
+      <div>
         <div class="container">
-          <h1 class="display-4">About Me</h1>
-          <p class="lead">I am an aspiring web developer with professional experience in government administration, immigration policy, political advocacy, and nonprofit communications.</p>
+          <h2>About Me</h2>
+          <p>
+            I like big cities with good public transit, good bagels and
+            Chicago-style hot dogs, movies, and thinking about how history
+            affects the present. I also have professional experience in
+            government administration, immigration policy, political advocacy,
+            and nonprofit communications.
+          </p>
+          <br />
+          <p class="resume">
+            <a
+              href="./Assets/Patrick Walls - Resume.pdf"
+              target="blank"
+              id="resume"
+              >Resume</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -62,52 +110,101 @@
     <!-- Projects Section -->
     <section id="projects">
       <div>
-        <div class="container">
+        <div class="container projects-container">
           <h2>My Projects</h2>
-          <ul>
-            <li>CSS Creature</li>
-            <li>Hulu Static Layout</li>
-            <li>Random Pokemon Generator API Project</li>
-            <li>Members of Congress Search API Project</li>
-            <li>Coming soon!</li>
-            <li>Coming soon!</li>
+          <ul class="projects-list">
+            <li class="project-item" id="css-creature">
+              <a
+                href="https://codepen.io/P-Walls/pen/abdrvYV"
+                class="project-link"
+                target="blank"
+                >CSS Creature</a
+              >
+            </li>
+            <li class="project-item" id="static-layout">
+              <a
+                href="https://p-walls.github.io/StaticLayout/"
+                class="project-link"
+                target="blank"
+                >Hulu Static Layout</a
+              >
+            </li>
+            <li class="project-item" id="api-1">
+              <a
+                href="https://p-walls.github.io/Pokemon-Generator/"
+                class="project-link"
+                target="blank"
+                >Random Pokemon Generator</a
+              >
+            </li>
+            <li class="project-item" id="api-2">
+              <a
+                href="https://congress-search-api-project.web.app/"
+                class="project-link"
+                target="blank"
+                >Members of Congress Search</a
+              >
+            </li>
+            <li class="project-item" id="future-1">
+              <a href="" class="project-link">Coming soon!</a>
+            </li>
+            <li class="project-item" id="future-2">
+              <a href="" class="project-link">Coming soon!</a>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="contact">
-        <div class="container">
-            <form
-            action="https://formspree.io/xeqrdgqe"
-            method="POST"
-          >
-                <label>
-                    Your email:
-                    <input type="text" name="_replyto">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-          
-                <!-- your other form fields go here -->
-          
-                <button type="submit">Send</button>
-          </form>
-          <ul>
-            <li><img src="../Portfolio/Assets/GitHub-Mark-64px.png" alt="" ></li>
-            <li><img src="./Assets/In-2C-41px-R.png" alt=""></li>
-          </ul>
+      <div class="container">
+        <form action="https://formspree.io/xeqrdgqe" method="POST">
+          <label>
+            Your email:
+            <input type="text" name="_replyto" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
 
-        </div>
+          <!-- your other form fields go here -->
+
+          <button type="submit">Send</button>
+        </form>
+
+        <ul class="social-list">
+          <li class="social-icon" id="github">
+            <a href="https://github.com/P-Walls" target="blank"
+              ><img src="../Portfolio/Assets/GitHub-Mark-64px.png" alt=""
+            /></a>
+          </li>
+          <li class="social-icon" id="linkedin">
+            <a href="https://www.linkedin.com/in/patrickawalls/" target="blank"
+              ><img src="./Assets/In-2C-41px-R.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Boostrap script tags -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
     <!-- My JavaScript link -->
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
