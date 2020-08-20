@@ -2,10 +2,11 @@
   margin-left: 75%;
 }
 
-.navbar {
+#navbar {
   position: fixed;
   display: flex;
   width: 100%;
   z-index: 1;
   color: whitesmoke;
+  background-color: #739e82;
 }

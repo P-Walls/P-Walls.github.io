@@ -33,11 +33,8 @@
   </head>
   <body>
     <!-- Navbar Section -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #739e82;"
-    >
-      <a class="navbar-brand" href="#landing-section">Patrick A. Walls</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+      <a class="navbar-brand" href="#landing-section">Home</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -73,10 +70,12 @@
 
     <!-- Jumbotron -->
     <section id="landing-section">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Patrick Walls</h1>
-          <p class="lead">Aspiring web developer with a focus on JavaScript</p>
+      <div class="container" id="landing">
+        <div class="container" id="name-header">
+          <h1 class="display-1">Patrick Walls</h1>
+          <p class="lead" id="subhead">
+            Aspiring web developer with a focus on JavaScript
+          </p>
         </div>
       </div>
     </section>
@@ -84,8 +83,8 @@
     <!-- About Section -->
     <!-- "jumbotron jumbotron-fluid" -->
     <section id="about">
-      <div>
-        <div class="container">
+      <div id="about-content">
+        <div class="container" id="about-text">
           <h2>About Me</h2>
           <p>
             I like big cities with good public transit, good bagels and
@@ -97,12 +96,20 @@
           <br />
           <p class="resume">
             <a
+              type="button"
+              class="btn btn-secondary btn-lg"
               href="./Assets/Patrick Walls - Resume.pdf"
               target="blank"
               id="resume"
-              >Resume</a
+              >Download Resumé</a
             >
           </p>
+        </div>
+        <div id="about-photo">
+          <img
+            src="./Assets/48081345_10216847255509032_8024347949565739008_o.jpg"
+            id="about-img"
+          />
         </div>
       </div>
     </section>
@@ -110,46 +117,96 @@
     <!-- Projects Section -->
     <section id="projects">
       <div>
-        <div class="container projects-container">
+        <div class="container" id="projects-container">
           <h2>My Projects</h2>
-          <ul class="projects-list">
+          <ul id="projects-list">
             <li class="project-item" id="css-creature">
-              <a
-                href="https://codepen.io/P-Walls/pen/abdrvYV"
-                class="project-link"
-                target="blank"
-                >CSS Creature</a
-              >
+              <div class="card" style="width: 15rem; height: 15rem;">
+                <img
+                  src="./Assets/css_creature.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <a
+                    href="https://codepen.io/P-Walls/pen/abdrvYV"
+                    class="project-link btn btn-outline-secondary"
+                    target="blank"
+                    >CSS Creature</a
+                  >
+                </div>
+              </div>
             </li>
             <li class="project-item" id="static-layout">
-              <a
-                href="https://p-walls.github.io/StaticLayout/"
-                class="project-link"
-                target="blank"
-                >Hulu Static Layout</a
-              >
+              <div class="card" style="width: 15rem; height: 15rem;">
+                <img
+                  src="./Assets/hulu_layout.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <a
+                    href="https://p-walls.github.io/StaticLayout/"
+                    class="project-link btn btn-outline-secondary"
+                    target="blank"
+                    >Hulu Static Layout</a
+                  >
+                </div>
+              </div>
             </li>
             <li class="project-item" id="api-1">
-              <a
-                href="https://p-walls.github.io/Pokemon-Generator/"
-                class="project-link"
-                target="blank"
-                >Random Pokemon Generator</a
-              >
+              <div class="card" style="width: 15rem; height: 15rem;">
+                <img
+                  src="./Assets/pokemon_generator.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <a
+                    href="https://p-walls.github.io/Pokemon-Generator/"
+                    class="project-link btn btn-outline-secondary"
+                    target="blank"
+                    >Random Pokemon Generator</a
+                  >
+                </div>
+              </div>
             </li>
             <li class="project-item" id="api-2">
-              <a
-                href="https://congress-search-api-project.web.app/"
-                class="project-link"
-                target="blank"
-                >Members of Congress Search</a
-              >
+              <div class="card" style="width: 15rem; height: 15rem;">
+                <img
+                  src="./Assets/senate_search.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <a
+                    href="https://congress-search-api-project.web.app/"
+                    class="project-link btn btn-outline-secondary"
+                    target="blank"
+                    >Members of Congress Search</a
+                  >
+                </div>
+              </div>
             </li>
             <li class="project-item" id="future-1">
-              <a href="" class="project-link">Coming soon!</a>
+              <div class="card" style="width: 15rem;">
+                <!-- <img src="..." class="card-img-top" alt="..." /> -->
+                <div class="card-body">
+                  <a href="" class="project-link btn btn-outline-secondary"
+                    >Coming soon!</a
+                  >
+                </div>
+              </div>
             </li>
-            <li class="project-item" id="future-2">
-              <a href="" class="project-link">Coming soon!</a>
+            <li class="project-item" id="future-1">
+              <div class="card" style="width: 15rem;">
+                <!-- <img src="..." class="card-img-top" alt="..." /> -->
+                <div class="card-body">
+                  <a href="" class="project-link btn btn-outline-secondary"
+                    >Coming soon!</a
+                  >
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -157,36 +214,60 @@
     </section>
 
     <section id="contact">
-      <div class="container">
+      <div class="container" id="contact-container">
+        <h3>Shoot me a message!</h3>
+        <br />
         <form action="https://formspree.io/xeqrdgqe" method="POST">
-          <label>
-            Your email:
-            <input type="text" name="_replyto" />
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-
+          <div class="row">
+            <div class="col">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+                name="_replyto"
+              />
+            </div>
+            <div class="col">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="1"
+                placeholder="Your Message Here"
+              ></textarea>
+            </div>
+          </div>
           <!-- your other form fields go here -->
-
-          <button type="submit">Send</button>
+          <br />
+          <button type="submit" class="btn btn-outline-secondary">Send</button>
         </form>
+      </div>
+    </section>
 
+    <footer>
+      <div class="container" id="backToTop">
+        <h6><a href="#landing-section">Return to Top</a></h6>
+      </div>
+      <div class="container" id="copyright">
+        <h6>© PATRICK WALLS 2020</h6>
+      </div>
+      <div class="container">
         <ul class="social-list">
           <li class="social-icon" id="github">
             <a href="https://github.com/P-Walls" target="blank"
-              ><img src="../Portfolio/Assets/GitHub-Mark-64px.png" alt=""
+              ><img
+                src="../Portfolio/Assets/GitHub-Mark-64px.png"
+                class="social-img"
             /></a>
           </li>
           <li class="social-icon" id="linkedin">
             <a href="https://www.linkedin.com/in/patrickawalls/" target="blank"
-              ><img src="./Assets/In-2C-41px-R.png" alt=""
+              ><img src="./Assets/In-2C-41px-R.png" class="social-img"
             /></a>
           </li>
         </ul>
       </div>
-    </section>
+    </footer>
 
     <!-- Boostrap script tags -->
     <script

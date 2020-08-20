@@ -1,5 +1,8 @@
 #projects {
-  background-image: url("https://images.unsplash.com/photo-1574981777142-d18437bf7796?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-image: url("https://images.unsplash.com/photo-1585504303156-6173f4fc7756?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -7,35 +10,31 @@
   justify-content: center;
 }
 
-.projects-container {
-  background-color: white;
-  padding: 150px;
+#projects-container {
+  background-color: #998888;
+  padding: 75px;
   text-align: center;
-  border-radius: 25px;
 }
 
-.projects-list {
+#projects-list {
   list-style: none;
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  justify-content: space-between;
 }
 
 .project-item {
-  padding: 25px;
-  margin: 5px;
-  background-color: #1f2041;
-  color: whitesmoke;
-  border-radius: 25px;
+  margin: 1em 0em 1em 0em;
 }
 
 .project-link {
-  color: whitesmoke;
+  color: #77878B;
   text-decoration: none;
 }
 
 .project-link:hover {
-  color: white;
+  color: #77878B;
   text-decoration: none;
   opacity: 50%;
 }

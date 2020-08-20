@@ -1,20 +1,13 @@
 body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
   background: white;
-  font-family: var(--font-one);
+  font-family: var(--font-three);
 }
 
-.resume {
-  text-align: center;
-}
 
-#resume {
-  color: black;
-}
 
-#resume:hover {
-  opacity: 50%;
-}
 
-a:hover {
-  text-decoration: none;
-}
