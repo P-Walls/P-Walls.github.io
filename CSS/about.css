@@ -1,37 +1,36 @@
 #about {
-    background-color: whitesmoke;
-    height: 100vh;
-    display: flex;
-    padding: auto;
+  background-color: whitesmoke;
+  height: 100vh;
+  display: flex;
+  padding: auto;
 }
 
 #about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: auto;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 #about-text {
-    max-width: 50em;
-    color: black;
+  max-width: 50em;
+  color: black;
 }
 
 #about-img {
-    height: 75vh;
+  height: 75vh;
 }
 
 .resume {
-    text-align: center;
-  }
-  
-  #resume {
-    color: whitesmoke;
-    background-color: #998888;
-  }
-  
-  #resume:hover {
-    opacity: 50%;
-  }
+  text-align: center;
+}
+
+#resume {
+  color: whitesmoke;
+  background-color: #998888;
+}
+
+#resume:hover {
+  opacity: 50%;
+}
