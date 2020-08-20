@@ -8,18 +8,21 @@
 #about-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex: auto;
   margin: auto;
+  flex-shrink: inherit;
 }
 
 #about-text {
-  max-width: 50em;
   color: black;
+  height: 75vh;
+  font-size: 1.25vw;
 }
 
-#about-img {
+#about-photo {
   height: 75vh;
+  flex-shrink: inherit;
+  overflow: hidden;
 }
 
 .resume {

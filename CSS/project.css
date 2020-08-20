@@ -1,5 +1,5 @@
 #projects {
-  background-image: url("https://images.unsplash.com/photo-1585504303156-6173f4fc7756?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  background-image: url("https://images.unsplash.com/photo-1585504256862-71490c55257d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,24 +8,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 1;
+  z-index: 1;
 }
 
 #projects-container {
   background-color: #998888;
-  padding: 75px;
+  height: 75%;
+  padding: 2em;
   text-align: center;
+  flex-shrink: inherit;
 }
 
 #projects-list {
   list-style: none;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   justify-content: center;
-  justify-content: space-between;
 }
 
 .project-item {
-  margin: 1em 0em 1em 0em;
+  margin: 1em;
+  display: block;
+  flex-shrink: inherit;
+}
+
+#css-creature,
+#static-layout,
+#api-1,
+#api-2 {
+  height: 15em;
+  flex-shrink: inherit;
+}
+
+.card {
+  width: 15em;
 }
 
 .project-link {

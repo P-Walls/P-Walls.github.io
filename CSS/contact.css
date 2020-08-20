@@ -4,3 +4,7 @@
   flex-direction: row-reverse;
   float: right;
 }
+
+#contact-btn {
+  margin: 1em;
+}
