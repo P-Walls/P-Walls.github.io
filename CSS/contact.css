@@ -5,6 +5,12 @@
   float: right;
 }
 
+#contact-container {
+  padding: 1em;
+  margin: 2em auto;
+  height: 215px;
+}
+
 #contact-btn {
-  margin: 1em;
+  margin: auto;
 }

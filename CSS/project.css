@@ -14,8 +14,8 @@
 
 #projects-container {
   background-color: #998888;
-  height: 75%;
-  padding: 2em;
+  height: 100%;
+  padding: 1em;
   text-align: center;
   flex-shrink: inherit;
 }
@@ -25,6 +25,7 @@
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+  margin: 0;
 }
 
 .project-item {
@@ -37,12 +38,13 @@
 #static-layout,
 #api-1,
 #api-2 {
-  height: 15em;
+  
   flex-shrink: inherit;
 }
 
 .card {
   width: 15em;
+  height: 17em;
 }
 
 .project-link {
